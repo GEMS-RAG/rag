@@ -1,5 +1,28 @@
 # MUTCD RAG Comparison Study
 
+This repository is the benchmark and comparison hub for GEMS-RAG. The four
+implementations used in the saved study runs have their own repositories:
+
+| Method | Study implementation | What it contains | Method reference |
+| --- | --- | --- | --- |
+| BM25 | [GEMS-RAG/bm25](https://github.com/GEMS-RAG/bm25) | Our dependency-free BM25 baseline over the shared MUTCD corpus. | [Robertson and Zaragoza, 2009](https://doi.org/10.1561/1500000019) |
+| GraphRAG | [GEMS-RAG/graphrag](https://github.com/GEMS-RAG/graphrag) | Our context-retrieval adapter and the pinned Microsoft GraphRAG source; the compared query algorithm is `local`. | [Edge et al., 2024](https://arxiv.org/abs/2404.16130) |
+| PaperQA2 | [GEMS-RAG/paperqa](https://github.com/GEMS-RAG/paperqa) | Our canonical-chunk/evidence adapter and the pinned PaperQA source, used in context-only mode. | [Skarlinski et al., 2024](https://arxiv.org/abs/2409.13740) |
+| GEMS-RAG | [GEMS-RAG/gems-rag](https://github.com/GEMS-RAG/gems-rag) | The GEMS-RAG source and our retrieval adapter, used in `full` mode. | [Implementation citation](https://github.com/GEMS-RAG/gems-rag/blob/main/CITATION.cff) |
+
+Each method repository includes setup instructions, citation metadata, and
+file-level provenance. [docs/IMPLEMENTATIONS.md](docs/IMPLEMENTATIONS.md)
+describes the study configurations and source attribution;
+[IMPLEMENTATIONS.json](IMPLEMENTATIONS.json) pins the extracted repository
+commits. The shared corpus, benchmark, study indexes, runner, and scoring tools
+remain here. The bundled source snapshot below preserves the existing
+reproduction workflow.
+
+For citations, use [CITATION.cff](CITATION.cff) for this comparison hub and
+[references.bib](references.bib) for the original methods and implementation
+repositories. Credit Microsoft GraphRAG and FutureHouse PaperQA alongside our
+study adapters when using those methods.
+
 This folder is the anonymous source release for the MUTCD-150 retrieval
 comparison. The single source ZIP stays below 100 MB and contains the BM25,
 GraphRAG, PaperQA, and GEMS-RAG code; the canonical corpus and source PDF; the
@@ -34,7 +57,8 @@ query-strategy suffixes.
 - Uncompressed source folder size: `40.2 MiB`
 - Source ZIP limit: strictly below `100,000,000` bytes
 
-Git histories and remote URLs are intentionally absent. GraphRAG and PaperQA
+Original Git histories and remote URLs are intentionally absent from the
+bundled source snapshot. GraphRAG and PaperQA
 revision identifiers are retained because they identify licensed research
 software required for reproduction. A GEMS-RAG revision identifier is not
 embedded in the anonymous release.

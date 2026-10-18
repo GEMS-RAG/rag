@@ -19,7 +19,7 @@
     "paperqa": "d7675d7b7eddeb3535e8c260399c5bbeeb818c50",
     "paperqa_version": "0.1.dev1+gd7675d7b7"
   },
-  "file_count": 557,
+  "file_count": 561,
   "files": [
     {
       "bytes": 559,
@@ -37,14 +37,14 @@
       "sha256": "e94e555406d6f963915dcca2569c4ee42f7d05fb0283ac016d49b1036c4da326"
     },
     {
-      "bytes": 13905,
+      "bytes": 15828,
       "path": "README.md",
-      "sha256": "dcdc34cb9d59025e993c6364fc9db0d0c2e42db1afb4e61deed4c5c6a899d2ba"
+      "sha256": "2f470bdab6a3539d80ca06234653646cd587e9d88658b9951e74731f58f82164"
     },
     {
-      "bytes": 779,
+      "bytes": 1455,
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "67037c641d8450a334e62a7d0c61de1279f34301cfe9d758a2672e8a1945ba83"
+      "sha256": "f949fa4fa9eb80958f3c02a764c412819eb38b66cedf486172d1e9b11a5f3881"
     },
     {
       "bytes": 33815,
@@ -2805,6 +2805,26 @@
       "bytes": 561,
       "path": "third_party/paperqa/src/paperqa/version.py",
       "sha256": "5abf9864818f36f460e546635292bac19944a71d7db60e71f5e48f9601aed9fe"
+    },
+    {
+      "bytes": 374,
+      "path": "CITATION.cff",
+      "sha256": "f1114921c88203f7ad10b180a25b9f3915a5e218fc44154749dc80a4c9dd8b9e"
+    },
+    {
+      "bytes": 2692,
+      "path": "IMPLEMENTATIONS.json",
+      "sha256": "d45f9b642476be18f9b5472d4c494e3cffd93b8f9a1dcdf27c9caa9c41f820a5"
+    },
+    {
+      "bytes": 5639,
+      "path": "docs/IMPLEMENTATIONS.md",
+      "sha256": "fa48629a145f6b2823d64af647d25998529194e945e1580089d53d98ba914666"
+    },
+    {
+      "bytes": 2149,
+      "path": "references.bib",
+      "sha256": "a95a5ba38eeed5848de4d7a3eac8d7071e24e497a84a4cc3ff79d147f48a2647"
     }
   ],
   "gems_rag_index": {
@@ -2865,7 +2885,13 @@
   },
   "release_date": "2026-07-31",
   "release_name": "mutcd-rag-anonymous-release",
+  "repository_split": {
+    "date": "2026-10-18",
+    "description": "Added standalone study-implementation repositories, pinned source commits, citations, and source attribution. Bundled retrieval source and shared study assets are retained.",
+    "documentation": "docs/IMPLEMENTATIONS.md",
+    "manifest": "IMPLEMENTATIONS.json"
+  },
   "schema_version": 1,
   "status": "complete",
-  "total_file_bytes": 42118508
+  "total_file_bytes": 42131961
 }

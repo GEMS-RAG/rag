@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+type: software
+message: "Cite this comparison hub, the method implementation repositories, and the original method papers as appropriate; see references.bib."
+title: "GEMS-RAG: MUTCD RAG comparison study"
+authors:
+  - name: "GEMS-RAG contributors"
+repository-code: "https://github.com/GEMS-RAG/rag"
+url: "https://github.com/GEMS-RAG/rag"
+version: "1.0.0"
